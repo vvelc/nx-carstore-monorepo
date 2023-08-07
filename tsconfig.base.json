@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nx-carstore-monorepo/utils/data-validation-utils": [
+        "libs/utils/data-validation-utils/src/index.ts"
+      ],
+      "@nx-carstore-monorepo/utils/price-utils": [
+        "libs/utils/price-utils/src/index.ts"
+      ],
+      "@nx-carstore-monorepo/utils/uuid-utils": [
+        "libs/utils/uuid-utils/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
