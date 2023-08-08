@@ -1,7 +1,5 @@
 import { Route } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
-import { MakesComponent } from './features/makes/makes.component';
-import { CarsComponent } from './features/cars/cars.component';
 
 export const appRoutes: Route[] = [
   {
@@ -9,11 +7,11 @@ export const appRoutes: Route[] = [
     component: HomeComponent,
   },
   {
-    path: 'makes',
-    component: MakesComponent,
+    path: 'makes', 
+    loadComponent: () => import('@nx-carstore-monorepo/frontend-features/makes').then(m => m.MakesComponent)
   },
   {
-    path: 'cars',
-    component: CarsComponent,
+    path: 'cars', 
+    loadChildren: () => import('@nx-carstore-monorepo/frontend-features/cars').then(m => m.CarsModule)
   },
 ];

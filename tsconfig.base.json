@@ -15,14 +15,17 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-carstore-monorepo/utils/data-validation-utils": [
-        "libs/utils/data-validation-utils/src/index.ts"
+      "@nx-carstore-monorepo/frontend-features/cars": [
+        "libs/frontend-features/cars/src/index.ts"
       ],
-      "@nx-carstore-monorepo/utils/price-utils": [
-        "libs/utils/price-utils/src/index.ts"
+      "@nx-carstore-monorepo/frontend-features/makes": [
+        "libs/frontend-features/makes/src/index.ts"
       ],
-      "@nx-carstore-monorepo/utils/uuid-utils": [
-        "libs/utils/uuid-utils/src/index.ts"
+      "@nx-carstore-monorepo/shared/utils/data-validation": [
+        "libs/shared/utils/data-validation/src/index.ts"
+      ],
+      "@nx-carstore-monorepo/shared/utils/uuid-validation": [
+        "libs/shared/utils/uuid-validation/src/index.ts"
       ]
     }
   },
