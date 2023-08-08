@@ -1,5 +1,5 @@
 {
-  "name": "@nx-carstore-monorepo/utils/data-validation-utils",
+  "name": "@nx-carstore-monorepo/shared/utils/uuid-validation",
   "version": "0.0.1",
   "dependencies": {
     "tslib": "^2.3.0"

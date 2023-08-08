@@ -1,17 +1,17 @@
 {
-  "name": "utils-data-validation-utils",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/utils/data-validation-utils/src",
+  "name": "shared-utils-data-validation",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/utils/data-validation/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/utils/data-validation-utils",
-        "main": "libs/utils/data-validation-utils/src/index.ts",
-        "tsConfig": "libs/utils/data-validation-utils/tsconfig.lib.json",
-        "assets": ["libs/utils/data-validation-utils/*.md"]
+        "outputPath": "dist/libs/shared/utils/data-validation",
+        "main": "libs/shared/utils/data-validation/src/index.ts",
+        "tsConfig": "libs/shared/utils/data-validation/tsconfig.lib.json",
+        "assets": ["libs/shared/utils/data-validation/*.md"]
       }
     },
     "lint": {
@@ -19,8 +19,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/utils/data-validation-utils/**/*.ts",
-          "libs/utils/data-validation-utils/package.json"
+          "libs/shared/utils/data-validation/**/*.ts",
+          "libs/shared/utils/data-validation/package.json"
         ]
       }
     },
@@ -28,7 +28,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/utils/data-validation-utils/jest.config.ts",
+        "jestConfig": "libs/shared/utils/data-validation/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

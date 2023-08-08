@@ -1,17 +1,17 @@
 {
-  "name": "utils-uuid-utils",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/utils/uuid-utils/src",
+  "name": "shared-utils-uuid-validation",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/utils/uuid-validation/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/utils/uuid-utils",
-        "main": "libs/utils/uuid-utils/src/index.ts",
-        "tsConfig": "libs/utils/uuid-utils/tsconfig.lib.json",
-        "assets": ["libs/utils/uuid-utils/*.md"]
+        "outputPath": "dist/libs/shared/utils/uuid-validation",
+        "main": "libs/shared/utils/uuid-validation/src/index.ts",
+        "tsConfig": "libs/shared/utils/uuid-validation/tsconfig.lib.json",
+        "assets": ["libs/shared/utils/uuid-validation/*.md"]
       }
     },
     "lint": {
@@ -19,8 +19,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/utils/uuid-utils/**/*.ts",
-          "libs/utils/uuid-utils/package.json"
+          "libs/shared/utils/uuid-validation/**/*.ts",
+          "libs/shared/utils/uuid-validation/package.json"
         ]
       }
     },
@@ -28,7 +28,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/utils/uuid-utils/jest.config.ts",
+        "jestConfig": "libs/shared/utils/uuid-validation/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
