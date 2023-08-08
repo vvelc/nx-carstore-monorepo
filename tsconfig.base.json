@@ -15,12 +15,22 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-carstore-monorepo/backend-features/cars": [
+        "libs/backend-features/cars/src/index.ts"
+      ],
+      "@nx-carstore-monorepo/backend-features/makes": [
+        "libs/backend-features/makes/src/index.ts"
+      ],
       "@nx-carstore-monorepo/frontend-features/cars": [
         "libs/frontend-features/cars/src/index.ts"
       ],
       "@nx-carstore-monorepo/frontend-features/makes": [
         "libs/frontend-features/makes/src/index.ts"
       ],
+      "@nx-carstore-monorepo/shared/interfaces": [
+        "libs/shared/interfaces/src/index.ts"
+      ],
+      "@nx-carstore-monorepo/shared/types": ["libs/shared/types/src/index.ts"],
       "@nx-carstore-monorepo/shared/utils/data-validation": [
         "libs/shared/utils/data-validation/src/index.ts"
       ],
