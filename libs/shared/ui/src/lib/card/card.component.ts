@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'nx-carstore-monorepo-card',
+  selector: 'ncm-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
 })

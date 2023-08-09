@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "nx-carstore-monorepo",
+            "prefix": "ncm",
             "style": "kebab-case"
           }
         ]

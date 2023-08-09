@@ -2,7 +2,7 @@
   "name": "shared-ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/ui/src",
-  "prefix": "nx-carstore-monorepo",
+  "prefix": "ncm",
   "tags": [],
   "projectType": "library",
   "targets": {

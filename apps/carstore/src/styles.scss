@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,5 +19,5 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #eeeef4;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
 }
