@@ -10,4 +10,5 @@ export interface Car {
     carType: CarType;
     fuelType: 'electric' | 'glp' | 'gasoline';
     price: number;
+    isFeatured: boolean;
 }
