@@ -1,0 +1,13 @@
+<h1>Makes</h1>
+
+<div class="makes-list grid">
+    <a 
+    class="make-wrapper col-12 md:col-6 lg:col-4" 
+    *ngFor="let make of makes()"
+    [routerLink]="'/cars'" [queryParams]="{make: make.id}" routerLinkActive="router-link-active" 
+    >
+        <ncm-card>
+            <img [src]="make.logoUrl" alt="make logo" class="make-img">
+        </ncm-card>
+    </a>
+</div>
