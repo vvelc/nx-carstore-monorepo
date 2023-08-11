@@ -8,10 +8,10 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'makes', 
-    loadComponent: () => import('@nx-carstore-monorepo/frontend-features/makes').then(m => m.MakesComponent)
+    loadChildren: () => import('@nx-carstore-monorepo/frontend-features/makes').then(m => m.MakesModule)
   },
   {
-    path: 'cars', 
+    path: 'cars',
     loadChildren: () => import('@nx-carstore-monorepo/frontend-features/cars').then(m => m.CarsModule)
   },
 ];

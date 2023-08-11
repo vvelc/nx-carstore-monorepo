@@ -1,13 +1,63 @@
-<ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/makes">Makes</a></li>
-    <li>
-      <a routerLink="/cars">Cars</a>
-      <ul>
-        <li><a routerLink="/cars">Cars List</a></li>
-        <li><a routerLink="/cars/1234">Car Details (1234)</a></li>
-      </ul>
-    </li>
-  </ul>
-  <router-outlet></router-outlet>
-  
+<div class="layout">
+  <div class="layout-header">
+    <ncm-header>
+      <ng-template #headerLogo>
+          <img src="https://via.placeholder.com/200x50" alt="logo">
+      </ng-template>
+      <ng-template #headerNavLinks>
+          <ul class="flex flex-row">
+              <li
+                class="nav-item flex"
+                *ngFor="let navLink of navLinks"
+              >
+                  <a 
+                    class="nav-link flex align-items-center justify-content-center w-8rem h-3rem hover:bg-indigo-100 text-900 transition-duration-300 font-bold border-round-lg m-2" 
+                    [routerLink]="navLink.url"
+                    routerLinkActive="bg-indigo-400 hover:bg-indigo-400 text-white"
+                    [routerLinkActiveOptions]="{
+                      matrixParams: 'ignored',
+                      queryParams: 'ignored',
+                      fragment: 'ignored',
+                      paths: 'exact'
+                      }"
+                  >{{navLink.label}}</a>
+              </li>
+          </ul>
+      </ng-template>
+    </ncm-header>
+  </div>
+  <div class="layout-content">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="layout-footer">
+    
+  </div>
+</div>
+<!-- layout
+  ng-template layout header
+    header component // params: logoUrl:string, links:{ label:string, url:string }[]
+      div.header
+        div.logo-wrapper
+          img.logo
+        nav.nav
+          ul.nav-items
+            li.nav-item
+              a.nav-link
+                Home
+            li.nav-item
+              a.nav-link
+                Makes
+            li.nav-item
+              a.nav-link
+                Cars
+  ng-template layout sidebar (not using it)
+    sidebar component --ignore--
+  ng-template layout content
+    ng-content
+      /makes
+        banner
+        car types
+        makes
+        featured cars
+  ng-template layout footer
+    footer component //TODO: pending -->
