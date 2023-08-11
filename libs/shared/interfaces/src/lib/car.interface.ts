@@ -1,7 +1,7 @@
 import { CarColor, CarType } from "@nx-carstore-monorepo/shared/types";
 import { IMake } from "./make.interface";
 
-export interface Car {
+export interface ICar {
     id: string;
     make: IMake;
     model: string;
