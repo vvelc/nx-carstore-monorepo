@@ -1,1 +1,1 @@
-export * from './lib/makes/makes.component';
+export * from './lib/makes.module';
