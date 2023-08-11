@@ -27,6 +27,12 @@
       "@nx-carstore-monorepo/frontend-features/makes": [
         "libs/frontend-features/makes/src/index.ts"
       ],
+      "@nx-carstore-monorepo/frontend-utils/cars": [
+        "libs/frontend-utils/cars/src/index.ts"
+      ],
+      "@nx-carstore-monorepo/frontend-utils/makes": [
+        "libs/frontend-utils/makes/src/index.ts"
+      ],
       "@nx-carstore-monorepo/shared/interfaces": [
         "libs/shared/interfaces/src/index.ts"
       ],
