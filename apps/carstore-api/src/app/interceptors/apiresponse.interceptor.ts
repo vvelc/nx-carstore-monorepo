@@ -10,13 +10,10 @@ import { Observable, map } from 'rxjs';
 export class ApiresponseInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
     return next.handle().pipe((
-      map((data) => {
-        console.log('works');
-        return ({
-          data,
-          statusCode: context.switchToHttp().getResponse().statusCode,
-        })
-      })
+      map((data) => ({
+        data,
+        statusCode: context.switchToHttp().getResponse().statusCode,
+      }))
     ));
   }
 }

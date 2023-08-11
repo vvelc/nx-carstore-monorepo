@@ -7,7 +7,7 @@ import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 
 import { AppModule } from './app/app.module';
-import { ApiresponseInterceptor } from '@nx-carstore-monorepo/backend-features/makes';
+import { ApiresponseInterceptor } from './app/interceptors/apiresponse.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
