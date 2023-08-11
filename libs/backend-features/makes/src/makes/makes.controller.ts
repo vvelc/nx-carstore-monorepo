@@ -15,10 +15,10 @@ import { UpdateMakeDto } from './dto/update-make.dto';
 export class MakesController {
   constructor(private readonly makesService: MakesService) {}
 
-  @Post()
-  create(@Body() createMakeDto: CreateMakeDto) {
-    return this.makesService.create(createMakeDto);
-  }
+  // @Post()
+  // create(@Body() createMakeDto: CreateMakeDto) {
+  //   return this.makesService.create(createMakeDto);
+  // }
 
   @Get()
   findAll() {
@@ -27,16 +27,16 @@ export class MakesController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.makesService.findOne(+id);
+    return this.makesService.findOne(id);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateMakeDto: UpdateMakeDto) {
-    return this.makesService.update(+id, updateMakeDto);
-  }
+  // @Patch(':id')
+  // update(@Param('id') id: string, @Body() updateMakeDto: UpdateMakeDto) {
+  //   return this.makesService.update(+id, updateMakeDto);
+  // }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.makesService.remove(+id);
-  }
+  // @Delete(':id')
+  // remove(@Param('id') id: string) {
+  //   return this.makesService.remove(+id);
+  // }
 }
