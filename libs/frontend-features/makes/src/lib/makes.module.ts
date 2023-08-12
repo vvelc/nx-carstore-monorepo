@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { MakesListComponent } from './features/makes-list/makes-list.component';
 import { UiModule } from '@nx-carstore-monorepo/shared/ui';
 import { RouterModule } from '@angular/router';
@@ -11,7 +11,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [MakesListComponent],
   imports: [
     CommonModule,
-    NgOptimizedImage,
     HttpClientModule,
     RouterModule.forChild(makesRoutes),
     UiModule,

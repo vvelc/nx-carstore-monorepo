@@ -10,12 +10,9 @@ import { IMake } from '@nx-carstore-monorepo/shared/interfaces';
   encapsulation: ViewEncapsulation.None,
 })
 export class MakesListComponent implements OnInit {
-  numbers: number[];
   makes = signal<IMake[]>([]);
 
-  constructor(private makesService: MakesService){
-    this.numbers = Array(20).fill(4); // [4,4,4,4,4]
-  }
+  constructor(private makesService: MakesService){}
   
   getMakes() {
     this.makesService.getMakes().subscribe((res) => {
@@ -26,4 +23,4 @@ export class MakesListComponent implements OnInit {
   ngOnInit() {
     this.getMakes();
   }
-}
+}  

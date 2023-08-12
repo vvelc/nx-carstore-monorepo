@@ -4,7 +4,7 @@
     <a 
     class="make-wrapper col-12 md:col-6 lg:col-4" 
     *ngFor="let make of makes()"
-    [routerLink]="'/cars'" [queryParams]="{make: make.id}" routerLinkActive="router-link-active" 
+    [routerLink]="'/cars'" [queryParams]="{make: make.id}" routerLinkActive="active" 
     >
         <ncm-card>
             <img [src]="make.logoUrl" alt="make logo" class="make-img">

@@ -11,6 +11,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'gasoline',
     price: 14966,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/598/796/20/blue-audi-q7-tdi-quattro-blue-audi-q7-wallpaper-preview.jpg',
   },
   {
     id: '2',
@@ -22,6 +23,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'gasoline',
     price: 14142,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/107/211/608/the-evening-bmw-2018-crossover-suv-hd-wallpaper-preview.jpg',
   },
   {
     id: '3',
@@ -37,6 +39,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'gasoline',
     price: 22573,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/165/983/630/mercedes-benz-mercedes-amg-gt-r-car-coupe-wallpaper-preview.jpg',
   },
   {
     id: '4',
@@ -52,6 +55,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'gasoline',
     price: 25686,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/193/368/917/toyota-hybrid-corolla-cross-th-spec-hd-wallpaper-preview.jpg',
   },
   {
     id: '5',
@@ -63,6 +67,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'electric',
     price: 30025,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/402/800/955/ford-focus-rs-blue-wallpaper-preview.jpg',
   },
   {
     id: '6',
@@ -78,6 +83,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'glp',
     price: 21011,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/645/927/698/chevrolet-cruze-novo-wallpaper-preview.jpg',
   },
   {
     id: '7',
@@ -93,6 +99,7 @@ export const carsMockList: ICar[] = [
     fuelType: 'gasoline',
     price: 34793,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/395/511/624/car-honda-civic-type-r-wallpaper-preview.jpg',
   },
   {
     id: '8',
@@ -108,5 +115,6 @@ export const carsMockList: ICar[] = [
     fuelType: 'gasoline',
     price: 22549,
     isFeatured: false,
+    imgUrl: 'https://c4.wallpaperflare.com/wallpaper/10/400/1006/car-nissan-gtr-r34-blue-cars-wallpaper-preview.jpg',
   },
 ];

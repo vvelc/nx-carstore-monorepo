@@ -19,12 +19,8 @@ export class AppComponent {
       url: '/makes',
     },
     {
-      label: 'Car List',
+      label: 'Cars',
       url: '/cars',
     },
-    {
-      label: 'Car Details 123',
-      url: '/cars/123',
-    }
   ]
 }

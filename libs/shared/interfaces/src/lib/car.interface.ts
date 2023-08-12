@@ -11,4 +11,5 @@ export interface ICar {
     fuelType: 'electric' | 'glp' | 'gasoline';
     price: number;
     isFeatured: boolean;
+    imgUrl: string;
 }

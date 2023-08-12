@@ -1,1 +1,16 @@
-<p>cars-list works!</p>
+<h1 class="page-title">Cars</h1>
+
+<div class="cars-list grid">
+    <a 
+    class="car-wrapper col-12 md:col-6 lg:col-4" 
+    *ngFor="let car of cars()"
+    [routerLink]="['/cars', car.id]" routerLinkActive="active" 
+    >
+        <p-card class="card" [header]="car.make.name + ' ' + car.model">
+            <ng-template pTemplate="header">
+                <img [src]="car.imgUrl" alt="car img" class="car-img" [style]="{ height: '200px' }">
+            </ng-template>
+            <p>{{car.year}}</p>
+        </p-card>
+    </a>
+</div>

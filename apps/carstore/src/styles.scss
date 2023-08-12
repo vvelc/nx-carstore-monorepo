@@ -21,3 +21,12 @@ html, body {
     background-color: #eeeef4;
     font-family: var(--font-family);
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-title {
+    margin-bottom: 1rem;
+}
